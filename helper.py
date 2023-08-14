@@ -168,7 +168,7 @@ def play_webcam(conf, model, frame):
     # Integrate with webrtc_streamer
     webrtc_streamer(
         key="example",
-        video_frame_callback=callback(frame),
+        video_frame_callback=callback,
         rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     )
 
