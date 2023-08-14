@@ -1,0 +1,7 @@
+git+https://github.com/fullmakeralchemist/pytube/
+git+https://github.com/gatagat/lap@new-packaging
+streamlit==1.2.0
+streamlit-webrtc==0.35.1
+torch==2.0.1
+ultralytics==8.0.150
+pafy==0.5.5
