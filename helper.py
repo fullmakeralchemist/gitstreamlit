@@ -1,7 +1,6 @@
 from ultralytics import YOLO
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
-import cv2
+from streamlit_webrtc import webrtc_streamer
 import numpy as np
 from PIL import Image
 import av
@@ -164,7 +163,7 @@ def callback(frame):
     image = _display_detected_frames(img, is_display_tracker, tracker)
     return av.VideoFrame.from_ndarray(image, format="bgr24")
 
-def play_webcam(conf, model):
+def play_webcam():
     """
     Plays a webcam stream. Detects Objects in real-time using the YOLOv8 object detection model.
 
@@ -179,9 +178,9 @@ def play_webcam(conf, model):
         None
     """
     webrtc_streamer(
-    key="example",
-    video_frame_callback=callback,
-    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+        key="example",
+        video_frame_callback=callback,
+        rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     )
 
 
