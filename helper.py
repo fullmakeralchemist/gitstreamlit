@@ -166,10 +166,12 @@ def callback(frame):
 
 
 def play_webcam():
+
     webrtc_streamer(
-    key="example",
-    video_frame_callback=callback,
-    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+
+        key="example",
+        video_frame_callback=callback,
+        rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     )
 
 
