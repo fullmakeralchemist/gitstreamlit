@@ -19,8 +19,8 @@ st.set_page_config(
 
 # Main page heading
 st.title("Object Detection")
-st.markdown('Updload a photo, select a video, open webcam or paste a url from Youtube with this :blue[hand signals]: :+1:, :hand:, :i_love_you_hand_sign:, and :spock-hand:.')
-st.markdown('Then click the :blue[Detect Objects] button and check the result.')
+st.markdown('Updload a photo, select a video, open webcam or paste a url from Youtube with this hand signals: :+1:, :hand:, :i_love_you_hand_sign:, and :spock-hand:.')
+st.markdown('Then click the Detect Objects button and check the result.')
 
 # Sidebar
 st.sidebar.header("ML Model Config")
